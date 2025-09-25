@@ -1,0 +1,72 @@
+#stack practical 1
+from collections import deque
+stack1=[]
+stack1.append("Enter code")
+stack1.append("Enter PIN")
+stack1.append("Confirm")
+stack1.pop()  #undo 1
+print("stack=",stack1)
+
+#stack practical 2
+stack2=[]
+stack2.append("Chapter 1")
+stack2.append("Chapter 2")
+stack2.append("Chapter 3")
+stack2.pop()  #remove 1
+stack2.pop()  #remove 2
+print("stack=",stack2)
+
+#Reverse Africa
+challenge=["A","F","R","I","C","A"]
+river_word=""
+while challenge :
+    river_word = river_word+challenge.pop()
+print("river word=",river_word)
+print()
+
+#Refelction
+print("Reflection:")
+print()
+print("A stack helps in backtracking because it works on Last in first out(LIFO).")
+print()
+print("The lastest step or decision is stored on top of the stack.")
+print()
+print("when backtracking, you simply pop the last step to undo")
+print()
+print("This gives the correct reverse order for undoing actions.")
+print()
+
+#Queue practical 1
+people= deque(["A","B","C","D","E","F","G","H"])
+
+for _ in range(4):
+    people.popleft()
+print("Now person in front is =",people[0])
+
+#Queue practical 2
+
+people2= deque(["A","B","C","D","E","F","G","H"])
+F_served = people2.popleft()
+S_served = people2.popleft()
+print("S_served=",S_served)
+print()
+#Challenge
+print("Challenge:")
+print("Queue Vs Stack for ticket sales at stadium. Which is proper?")
+print()
+print("Queue is proper than stack because it work on first in first out (FIFO),")
+print()
+print("first person to arrive must get served first. Stack works on last in first out(LIFO),")
+print()
+print("this would mean that last person who arrives gets served first.")
+print()
+
+#Reflection
+print("Reflection:")
+print()
+print("Why FIFO promotes fairness in events?")
+print()
+print("FIFO promotes fairness by serving people in order their arrival..")
+print()
+
+
